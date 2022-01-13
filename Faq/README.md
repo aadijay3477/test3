@@ -25,3 +25,6 @@
 
 ## Invalid_Request_mgid
 * MerchantGateway_Id not found
+
+## Processing_Error_vpa
+* virtual payment address is not supported for this merchant Id

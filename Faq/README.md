@@ -28,3 +28,6 @@
 
 ## Processing_Error_vpa
 * virtual payment address is not supported for this merchant Id
+
+## VPA_verification_not_supported_for_the_given_merchant_Id
+* bfdsfjbjf

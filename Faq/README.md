@@ -1,139 +1,185 @@
-## FAQ ##
+## <p text-align="center"> [#](FAQ) FAQ </p>
 
-## already_exists
-* Notification already present
- 
-## ineligible_state
-* Please pass active mandate
- 
-## ineligible_state_gw
-* Gateway not found for this mandate
- 
-## invalid_info
-* Please pass a valid source information
- 
-## Invalid_invoice_display_number
-* Invoice_display_number is invalid
- 
-## Invalid_txn_date
-* Transaction date passed in source_info is not in unix timestamp format
- 
-## Invalid_Request
-* Notification not found
- 
-## Invalid_Request_mid
-* Merchant_Id not found
- 
-## Invalid_Request_mgid
-* MerchantGateway_Id not found
- 
-## VPA_verification_not_supported_for_the_given_merchant_Id
-* virtual payment address verification is not supported for this merchant Id
+## [#](already_exists) already_exists
 
-## Mandate_Not_Found
-* The user has entered bank details incorrectly
+- Notification already present
 
-## Transaction_is_inprocess
-* Transaction is in process
+## [#](ineligible_state) ineligible_state
 
-## Authentication_Error
-* Missing data authenticatio error
+- Please pass active mandate
 
-## Internal_Server_Error
-* Internal server error occured 
+## [#](ineligible_state_gw) ineligible_state_gw
 
-## Upstream_Api_Error
-* Upstream api error
+- Gateway not found for this mandate
 
-## Transaction_limit_reached_for_order
-* Transaction limit reached for this order
+## [#](invalid_info) invalid_info
 
-## merchant_account_cannot_be_null
-* Merchant account is null cannot proceed
+- Please pass a valid source information
 
-## Invalid_merchant_id
-* Merchant_Id is invalid
+## [#](Invalid_invoice_display_number) Invalid_invoice_display_number
 
-## No_card_could_be_located_for_token
-* Please check if card exists for given token
+- Invoice_display_number is invalid
 
-## txnCardInfo_missing_for_txnid
-* Transaction card info missing missing for txnId
+## [#](Invalid_txn_date) Invalid_txn_date
 
-## Can't_find_a_suitable_gateway_to_process_the_transaction
-* Unable to find suitable gateway please try other payment options
+- Transaction date passed in source_info is not in unix timestamp format
 
-## second_factor_not_found_for_this_Txnid
-* Login issue : second factor not found for this transaction Id
+## [#](Invalid_Request) Invalid_Request
 
-## Payment_method_not_found
-* Payment method not found please choose another payment option
+- Notification not found
 
-## txnOffer_missing_for_txnid
-* TxnOffer not available for this txnId
+## [#](Invalid_Request_mid) Invalid_Request_mid
 
-## this_entity_is_already_deleted
-* This entity is already deleted from bank accounts
+- Merchant_Id not found
 
-## Bad_Origin._Permission_denied.
-* IP validation failed -Bad Origin, Permission denied
+## [#](Invalid_Request_mgid) Invalid_Request_mgid
 
-## Authentication_is_required_for_fetching_order_details
-* Authentication required for fetching order details
+- MerchantGateway_Id not found
 
-## Merchant_Id_info_missing
-* Merchant Id Info not found
+## [#](VPA_verification_not_supported_for_the_given_merchant_Id) VPA_verification_not_supported_for_the_given_merchant_Id
 
-## Mandatory_fields_are_missing
-* mandatory fields are missing
+- virtual payment address verification is not supported for this merchant Id
 
-## Provided_command_not_found_for_given_orderId
-* Provided command not found for given orderId
+## [#](Mandate_Not_Found) Mandate_Not_Found
 
-## Internal_server_error
-* Internal server error
+- The user has entered bank details incorrectly
 
-## Access_Denied
-* Access denied
+## [#](Transaction_is_inprocess) Transaction_is_inprocess
 
-## No_successfull_txn_found_for_given_order_id
-* No successfull txn found for given order_id
+- Transaction is in process
 
-## Order_already_exists_with_the_given_order_id
-* Error : order already exists with the given order Id
+## [#](Authentication_Error) Authentication_Error
 
-## Duplicate_Request
-* Duplicate request Attempted
+- Missing data authenticatio error
 
-## Customer_not_found_for_this_order
-* Customer not found for this order
+## [#](Internal_Server_Error) Internal_Server_Error
 
-## Refund_Details_Not_found_the_request
-* Refund details not found for this request
+- Internal server error occured
 
-## Gateway_Not_supported
-* This gateway is not supported
+## [#](Upstream_Api_Error) Upstream_Api_Error
 
-## Authentication_Account_not_found
-* Authentication account not found
+- Upstream api error
 
-## Session_Expired
-* Session expired !
+## [#](Transaction_limit_reached_for_order) Transaction_limit_reached_for_order
 
-## Network_Not_Supported
-* Network not supported
+- Transaction limit reached for this order
 
-## Payment_type_Not_supported
-* Payment type not supported please select other payment method
+## [#](merchant_account_cannot_be_null) merchant_account_cannot_be_null
 
-## Encryption_failed
-* Encryption failed
+- Merchant account is null cannot proceed
 
-## Decryption_failed
-* Decryption failed
+## [#](Invalid_merchant_id) Invalid_merchant_id
 
-## unprocessable_entity
-* Unprocessable entity
+- Merchant_Id is invalid
 
-## Processing_Error
-* Processing Error
+## [#](No_card_could_be_located_for_token) No_card_could_be_located_for_token
+
+- Please check if card exists for given token
+
+## [#](txnCardInfo_missing_for_txnid) txnCardInfo_missing_for_txnid
+
+- Transaction card info missing missing for txnId
+
+## [#](Cannot_find_a_suitable_gateway_to_process_the_transaction) Cannot_find_a_suitable_gateway_to_process_the_transaction
+
+- Unable to find suitable gateway please try other payment options
+
+## [#](second_factor_not_found_for_this_Txnid) second_factor_not_found_for_this_Txnid
+
+- Login issue : second factor not found for this transaction Id
+
+## [#](Payment_method_not_found) Payment_method_not_found
+
+- Payment method not found please choose another payment option
+
+## [#](txnOffer_missing_for_txnid) txnOffer_missing_for_txnid
+
+- TxnOffer not available for this txnId
+
+## [#](this_entity_is_already_deleted) this_entity_is_already_deleted
+
+- This entity is already deleted from bank accounts
+
+## [#](Bad_Origin_Permission_denied) Bad_Origin_Permission_denied
+
+- IP validation failed -Bad Origin, Permission denied
+
+## [#](Authentication_is_required_for_fetching_order_details) Authentication_is_required_for_fetching_order_details
+
+- Authentication required for fetching order details
+
+## [#](Merchant_Id_info_missing) Merchant_Id_info_missing
+
+- Merchant Id Info not found
+
+## [#](Mandatory_fields_are_missing) Mandatory_fields_are_missing
+
+- mandatory fields are missing
+
+## [#](Provided_command_not_found_for_given_orderId) Provided_command_not_found_for_given_orderId
+
+- Provided command not found for given orderId
+
+## [#](Internal_server_error) Internal_server_error
+
+- Internal server error
+
+## [#](Access_Denied) Access_Denied
+
+- Access denied
+
+## [#](No_successfull_txn_found_for_given_order_id) No_successfull_txn_found_for_given_order_id
+
+- No successfull txn found for given order_id
+
+## [#](Order_already_exists_with_the_given_order_id) Order_already_exists_with_the_given_order_id
+
+- Error : order already exists with the given order Id
+
+## [#](Duplicate_Request) Duplicate_Request
+
+- Duplicate request Attempted
+
+## [#](Customer_not_found_for_this_order) Customer_not_found_for_this_order
+
+- Customer not found for this order
+
+## [#](Refund_Details_Not_found_the_request) Refund_Details_Not_found_the_request
+
+- Refund details not found for this request
+
+## [#](Gateway_Not_supported) Gateway_Not_supported
+
+- This gateway is not supported
+
+## [#](Authentication_Account_not_found) Authentication_Account_not_found
+
+- Authentication account not found
+
+## [#](Session_Expired) Session_Expired
+
+- Session expired !
+
+## [#](Network_Not_Supported) Network_Not_Supported
+
+- Network not supported
+
+## [#](Payment_type_Not_supported) Payment_type_Not_supported
+
+- Payment type not supported please select other payment method
+
+## [#](Encryption_failed) Encryption_failed
+
+- Encryption failed
+
+## [#](Decryption_failed) Decryption_failed
+
+- Decryption failed
+
+## [#](unprocessable_entity) unprocessable_entity
+
+- Unprocessable entity
+
+## [#]() Processing_Error
+
+- Processing Error

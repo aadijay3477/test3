@@ -5,3 +5,13 @@ faqRoute _ routeParams = pure $ encode "<!DOCTYPE html><html><head><meta charset
 
 method GET "/error/faq"                                                    false false state FAQ                          faqRoute genericCleanupResourceLocks genericResponseHandler
 
+In Authentication.purs
+  
+  | FAQ
+
+Notification.purs
+
+
+
+In App.purs
+INVALID_REQUEST_ERROR | API_ERROR | AUTHENTICATION_ERROR | INVALID_REQUEST | INTERNAL_SERVER_ERROR | UPSTREAM_API_ERROR | PROCESSING_ERROR | ERROR

@@ -15,3 +15,11 @@ Notification.purs
 
 In App.purs
 INVALID_REQUEST_ERROR | API_ERROR | AUTHENTICATION_ERROR | INVALID_REQUEST | INTERNAL_SERVER_ERROR | UPSTREAM_API_ERROR | PROCESSING_ERROR | ERROR
+
+
+In API.purs
+
+throwECException :: forall rt st d. Int -> ECErrorPayload -> BackendFlow st rt d
+throwECException code errorPayload = do
+  res <- ecErrorToEulerErrorPayload errorPayload
+  throwException $ encodeJSON $ createErrorResponse code (encode res)

@@ -23,3 +23,17 @@ throwECException :: forall rt st d. Int -> ECErrorPayload -> BackendFlow st rt d
 throwECException code errorPayload = do
   res <- ecErrorToEulerErrorPayload errorPayload
   throwException $ encodeJSON $ createErrorResponse code (encode res)
+
+ecErrorToEulerErrorPayload :: forall rt st d. ECErrorPayload -> BackendFlow st rt EulerErrorPayload
+ecErrorToEulerErrorPayload inputPayload = do
+ let bucket       = ecerrorbucket (inputPayload ^. _status) (nullOrUndefinedToStr (inputPayload ^. _error_message))
+ let protocolhost = getProtocolAndhost 
+ sId <- doAffRR' "ecErrorToEulerErrorPayload" (liftEff getXRequestId)
+ pure $ EulerErrorPayload
+         { "type": bucket."type"
+         , code : nullOrUndefinedToStr (inputPayload ^. _error_code)
+         , message : bucket.msg
+         , user_message : NullOrUndefined (Just bucket.usrMsg)
+         , session_id : NullOrUndefined (Just sId)
+         , faq : protocolhost <> bucket.faq
+         }
